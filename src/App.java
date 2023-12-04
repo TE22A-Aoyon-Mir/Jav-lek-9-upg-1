@@ -18,6 +18,10 @@ public class App {
         //d
         System.out.println("\n");
         ritaLinje(5);
+
+        //e
+        System.out.println("\n");
+        ritaRektangel(4, 5);
     }
 
     //a
@@ -50,6 +54,20 @@ public class App {
         for (int i=0; i<längd; i++)
         {
             System.out.print("-");
+        }
+    }
+
+    //e
+    static void ritaRektangel(int höjd, int bredd)
+    {
+
+        for (int i=0; i<höjd; i++)
+        {
+            for (int i2=0; i2<bredd; i2++)
+            {
+                System.out.print("*");
+            }
+            System.out.println(); //ny rad
         }
     }
 }
