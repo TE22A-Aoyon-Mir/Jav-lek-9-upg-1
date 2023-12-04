@@ -1,17 +1,23 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        
+
         //a
         addera(14, 34);
         addera(1212, 333);
 
         //b
+        System.out.println("\n");
         minus(14, 34);
         minus(1212, 333);
 
         //c
+        System.out.println("\n");
         omkretsCirkel(9);
         omkretsCirkel(33);
+
+        //d
+        System.out.println("\n");
+        ritaLinje(5);
     }
 
     //a
@@ -36,5 +42,14 @@ public class App {
         double omkrets = radie*2*3.14;
         System.out.println(radie+" * 2 * 3.14 = "+omkrets);
         return omkrets;
+    }
+
+    //d
+    static void ritaLinje(int längd)
+    {
+        for (int i=0; i<längd; i++)
+        {
+            System.out.print("-");
+        }
     }
 }
