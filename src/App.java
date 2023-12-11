@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class App {
     public static void main(String[] args) throws Exception {
 
@@ -22,6 +24,17 @@ public class App {
         //e
         System.out.println("\n");
         ritaRektangel(4, 5);
+
+        //f
+        System.out.println("\n");
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Mata in ett decimaltal:");
+        double tal = sc.nextDouble();
+        sc.nextLine();
+        if(tal_postitvt(tal))
+            System.out.println(tal +" är positivt");
+        else
+            System.out.println(tal +" är INTE positivt");
     }
 
     //a
@@ -69,5 +82,18 @@ public class App {
             }
             System.out.println(); //ny rad
         }
+    }
+
+    //f
+    static boolean tal_postitvt(double tal)
+    {
+        boolean positivt=false;
+        if(tal>0){
+            positivt=true;
+        }
+        else{
+            positivt=false;
+        }
+        return positivt;
     }
 }
